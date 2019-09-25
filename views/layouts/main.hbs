@@ -1,0 +1,23 @@
+<!--
+	main.hbs
+	author: Faraz Iqbal
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Node Express-handlebars partials</title>
+		<link rel="stylesheet" href="/css/partials.css" />
+	</head>
+
+	<body>
+<!--	placeholder for content from the header.hbs file in the /views/partials directory 
+		the { { > xxx } } syntax means embed the content of file by the name of xxx.hbs			-->
+		<h1>Faraz Iqbal</h1>
+		{{>div1}}
+<!--	placeholder for the main webpage content from the /views directory (index.hbs file)	
+		the {{{body}}} syntax means embed the content of file named in the res.render method	-->
+		{{{body}}}												
+	</body>
+</html>
